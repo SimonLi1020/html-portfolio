@@ -1,0 +1,17 @@
+body {
+    background-color: black;
+    font-family: "Libre Baskerville", sans-serif;
+}
+
+.self-intro {
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 100px;
+    color: white;
+    text-align: center;
+}
+
+.lxy {
+    border: 10px solid white;
+    width: 100%;
+}
