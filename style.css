@@ -3,6 +3,19 @@ body {
     font-family: "Libre Baskerville", sans-serif;
 }
 
+.navbar ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    padding: 0;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+}
+
+
 .self-intro {
     width: 50%;
     margin-left: 25%;

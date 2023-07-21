@@ -1,4 +1,5 @@
-<!-- TODO 1: Create the HTML Boilerplate -->
+
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -10,21 +11,28 @@
         <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&display=swap" rel="stylesheet">
     </head>
     <body>
-        <div class="self-intro">
+        <nav class="navbar">
+            <ul>
+                <li><a href="#self-intro">Home</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="./public/about.html">About Me</a></li>
+                <li><a href="./public/contact.html">Contact Me</a></li>
+            </ul>
+        </nav>
+        
+        <div id="self-intro" class="self-intro">
             <img src="./assets/images/lxy.jpg" class="lxy">
             <h1>Simon Li's Portfolio</h1>
             <p>I aim to be a web developer</p>
-
         </div>
         
-        <hr />
-
-        <h3><a href="./public/movie-ranking.html">Movie Ranking Project</a></h3>
+        <div id="projects">
+            <h3><a href="./public/movie-ranking.html">Movie Ranking Project</a></h3>
         <img src="./assets/images/movie-ranking.png" height="200" width="200" />
         <h3><a href="./public/birthday-invite.html">Birthday Invite Project</a></h3>
         <img src="./assets/images/birthday-invite.png" height="200" width="200"/>
-        <hr />
-        <a href="./public/about.html">About Me</a>
-        <a href="./public/contact.html">Contact Me</a>
+        </div>
+
+        <!-- The rest of your website's content -->
     </body>
 </html>
