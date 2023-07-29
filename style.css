@@ -1,30 +1,78 @@
-body {
-    background-color: black;
-    font-family: "Libre Baskerville", sans-serif;
+.gradient-background {
+    background: linear-gradient(300deg, #00bfff, #ff4c68, #ef8172);
+    background-size: 180% 180%;
+    animation: gradient-animation 18s ease infinite;
+  }
+  
+  @keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+.middle-container {
+  margin: 100px 0;
 }
 
-.navbar ul {
-    display: flex;
-    justify-content: space-around;
-    list-style-type: none;
-    padding: 0;
+
+
+.intro {
+  width: 30%;
+  margin: auto;
 }
 
-.navbar a {
-    color: white;
-    text-decoration: none;
+p {
+  line-height: 2;
+}
+  
+p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
 }
 
-
-.self-intro {
-    width: 50%;
-    margin-left: 25%;
-    margin-top: 100px;
-    color: white;
+  body {
     text-align: center;
-}
+  }
 
-.lxy {
-    border: 10px solid white;
-    width: 100%;
+  .icon-square {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 0.75rem;
+  }
+  
+  .profile-img {
+    height: 100px;
+    border-radius: 50%;
+  }
+  
+  .lxybadminton {
+    height: 250px;
+  }
+
+  h2 {
+    margin-top: 30px;
+    color: #66bfbf;
+    font-family: "Montserrat", sans-serif;
+    font-size: 2.5rem;
+    font-weight: normal;
+    padding-bottom: 10px;
+}
+  
+.parent {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    grid-template-rows: repeat(1, 1fr);
+    width: 50%;
+    margin: 100px auto 0 auto;
+    text-align: left;
+    row-gap: 2rem;
 }

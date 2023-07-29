@@ -1,39 +1,173 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>My Website</title>
-        <link rel="stylesheet" href="style.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&display=swap" rel="stylesheet">
-    </head>
-    <body>
-        <nav class="navbar">
-            <ul>
-                <li><a href="#self-intro">Home</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="./public/about.html">About Me</a></li>
-                <li><a href="./public/courses.html">Courses</a></li>
-                <li><a href="./public/contact.html">Contact Me</a></li>
-            </ul>
-        </nav>
-        
-        <div id="self-intro" class="self-intro">
-            <img src="./assets/images/lxy.jpg" class="lxy">
-            <h1>Simon Li's Portfolio</h1>
-            <p>I aim to be a web developer</p>
-        </div>
-        
-        <div id="projects">
-            <h3><a href="./public/movie-ranking.html">Movie Ranking Project</a></h3>
-        <img src="./assets/images/movie-ranking.png" height="200" width="200" />
-        <h3><a href="./public/birthday-invite.html">Birthday Invite Project</a></h3>
-        <img src="./assets/images/birthday-invite.png" height="200" width="200"/>
-        </div>
 
-        <!-- The rest of your website's content -->
-    </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Xiangyi Li's Website</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+  <link rel="stylesheet" href="./style.css">
+  <style>
+    .feature-icon {
+      width: 4rem;
+      height: 4rem;
+      border-radius: 0.75rem;
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="./index.html">Home</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0"> 
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#researches">Researches</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./public/courses.html">Courses</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              My Life
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="./public/badminton.html">Badminton</a></li>
+              <li><a class="dropdown-item" href="./public/food.html">Food</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search Content" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Check</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <section id="title gradient-background" class="gradient-background">
+    <div class="container col-xxl-8 px-4 pt-5">
+      <div class="row flex-lg-row-reverse align-items-center g-5 pt-5">
+        <!-- <div class="col-10 col-sm-8 col-lg-4">
+          <img src="././assets/images/lxy.jpg" class="d-block mx-lg-auto img-fluid" alt="app demo" height="200" loading="lazy">
+        </div> -->
+        <div class="col-lg-12">
+          <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">This is Simon Li's personal website</h1>
+          
+          <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+            <button type="button" href="./public/about.html" class="btn btn-light btn-lg px-4 me-md-2"> About Me</button>
+            <button type="button" href="./public/contact.html" class="btn btn-outline-light btn-lg px-4">Contact Me</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="about">
+    <div class="profile middle-container">
+      <img src="/assets/images/lxy.jpg" class="profile-img" alt="angela-profile-img">
+      <h2>Hello.</h2>
+      <p class="intro">I aim to be a Web Developer😀😭😍.  I am passionate about ML and NLP🤖.   I ❤️ badminton🏃‍ and milk🐂.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>My Skills</h2>
+    <div class="parent">
+      <div class="typing">
+        <img src="./assets/images/cat-typing.gif" alt="typing cat">
+      </div>
+      <div class="coding">
+        <h3>Design &amp; Development</h3>
+        <p>I started to play video games since I was 7. In university, I gained much experience about coding and designing.</p>
+      </div>
+      <div class="chillies">
+        <img class="lxybadminton" src="./assets/images/lxybadminton.jpg" alt="lxybadminton">
+      </div>
+      <div class="hot-wings">
+        <h3>Strong Spirit</h3>
+        <p>I began training for track and field events during my elementary school years, participating annually in citywide competitions on behalf of my school. Upon entering university, I shifted on and trained intensively for a year. </p>
+      </div>
+
+    </div>
+  </section>
+  <section id="Researches">
+
+  </section>
+  <section id="Courses">
+
+  </section>
+  
+
+  <div class="container">
+    <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
+      <div class="col mb-3">
+        <a href="/" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
+          <svg class="bi me-2" width="40" height="32">
+            <use xlink:href="#bootstrap"></use>
+          </svg>
+        </a>
+        <p class="text-body-secondary">© 2023</p>
+      </div>
+
+      <div class="col mb-3">
+
+      </div>
+
+      <div class="col mb-3">
+        <h5>Section</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+        </ul>
+      </div>
+
+      <div class="col mb-3">
+        <h5>Section</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+        </ul>
+      </div>
+
+      <div class="col mb-3">
+        <h5>Section</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+        </ul>
+      </div>
+    </footer>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
